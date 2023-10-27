@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CashOut"
+        tools:targetApi="31">
+        <activity
+            android:name=".CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SharmaBusBuy"
+            android:exported="false" />
+        <activity
+            android:name=".BusResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="true"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name=".MovieSearchActivity"
+            android:exported="true" />
+        <activity
+            android:name=".BusSearchActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".BillActivity"
+            android:exported="true" />
+        <activity
+            android:name=".VoucherActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PostActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MoviesActivity"
+            android:exported="true" />
+        <activity
+            android:name=".BusActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainPage"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="android.app.default_searchable"
+            android:value=".BusSearchActivity" />
+    </application>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+</manifest>
